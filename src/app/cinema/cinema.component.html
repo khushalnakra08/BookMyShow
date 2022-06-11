@@ -1,0 +1,7 @@
+<div>
+    <h1>Cinemas in {{city.name}}</h1>
+    <div class="cinema" *ngFor="let cinema of cinemas" routerLink="/cinemaHall/{{cinema.id}}">
+        <h1>{{cinema.name}}</h1>
+        <h3>Cinema Hall Available: {{cinema.totalCinemaHall}}</h3>
+    </div>
+</div>

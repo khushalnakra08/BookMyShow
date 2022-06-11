@@ -1,0 +1,7 @@
+<div>
+    <h1>Shows in {{cinemaHall.name}}</h1>
+    <div class="show" *ngFor="let show of shows" routerLink="/movieDetail/{{show.movieId}}/{{show.id}}">
+        <h3>Show Time : {{show.startTime}}</h3>
+        <br>
+    </div>
+</div>

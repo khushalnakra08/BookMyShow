@@ -1,0 +1,41 @@
+<div class="booking">
+    <h1>Booking for {{selectedMovie.name}}</h1>
+    <h3>Show time: {{selectedShow.startTime}}</h3>
+    <form [formGroup]="bookingForm" (ngSubmit)="book()">
+        <div>
+            <label for="show">
+                Show Time
+            </label>
+            <input value="{{selectedShow.startTime}}" id="show" readonly>
+        </div>
+        <div>
+            <label for="name">
+                Name
+            </label>
+            <input type="text" formControlName="name" id="name">
+        </div>
+        <div>
+            <label for="phone">
+                Phone Number
+            </label>
+            <input type="text" formControlName="phoneNo" id="phone">
+        </div>
+        <div>
+            <label for="email">
+                Email
+            </label>
+            <input type="text" formControlName="email" id="email">
+        </div>
+        <div>
+            <label for="seats">
+                Number Of Seats
+            </label>
+            <input type="number" formControlName="numberOfSeats" id="seats">
+        </div>
+        <div>
+            <button
+                [disabled]="!bookingForm.valid" type="submit">Book</button>
+        </div>
+    </form>
+    <label *ngIf="ticket"> Ticket Booked!!</label>
+</div>

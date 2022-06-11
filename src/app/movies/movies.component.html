@@ -1,0 +1,9 @@
+<div class="row movie">
+    <div class="col" *ngFor="let movie of movies">
+        <img width="173px" height="294" src="{{movie.source}}" alt="">
+        <div class="">
+            <h5>{{movie.name}}</h5>
+            <p>{{movie.genre}}</p>
+        </div>
+    </div>
+</div>

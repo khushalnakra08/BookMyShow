@@ -1,0 +1,53 @@
+<div class="sign">
+    <form [formGroup]="signInForm" (submit)="signIn()" >
+        <div  class="form-group">
+            <label for="name">
+                Name
+            </label>
+            <input type="text" formControlName="userName" id="name">
+            <div class="text-danger" *ngIf="signInForm.get('name')?.invalid && signInForm.get('name')?.touched">
+                Name is required.
+            </div>
+        </div>
+        <div  class="form-group">
+            <label for="email">
+                Email
+            </label>
+            <input type="text" formControlName="email" id="email">
+            <div class="text-danger" *ngIf="signInForm.get('email')?.invalid && signInForm.get('email')?.touched">
+                Email is required.
+            </div>
+        </div>
+        <div  class="form-group">
+            <label for="password">
+                Password
+            </label>
+            <input type="password" formControlName="password" id="password">
+            <div class="text-danger" *ngIf="signInForm.get('password')?.invalid && signInForm.get('password')?.touched">
+                Password is required.
+            </div>
+        </div>
+        <div  class="form-group">
+            <label for="phone">
+                Phone Number
+            </label>
+            <input type="text" formControlName="phoneNumber" id="phone">
+            <div class="text-danger" *ngIf="signInForm.get('phoneNumber')?.invalid && signInForm.get('phoneNumber')?.touched">
+                Phone Number is required.
+            </div>
+        </div>
+        <div>
+            <div class="form-group">
+                <button type="submit" [disabled]="!signInForm.valid">Register</button>
+            </div>
+        </div>
+    </form>
+    <div>
+        <button routerLink="/logIn">
+            LogIn
+        </button>
+    </div>
+    <label *ngIf="register"> User Register Successfully </label>
+</div>
+
+

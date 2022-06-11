@@ -1,0 +1,11 @@
+<div class="city">
+    <div class="row cities" >
+        <div class="col" *ngFor="let city of cities" routerLink="/cinema/{{city.id}}">
+            <img  class="me-4" width="85px" height="80px"
+                src="{{city.source}}" alt="">
+            <div>
+                <h6>{{city.name}}</h6>
+            </div>
+        </div>
+    </div>
+</div>

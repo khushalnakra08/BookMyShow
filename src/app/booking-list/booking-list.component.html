@@ -1,0 +1,7 @@
+<div class="bookingList">
+    <p>See Bookings</p>
+    <div *ngFor="let booking of bookings">
+        <li (click)="details(booking.id)">{{booking.name}}</li>
+    </div>
+    <app-details *ngIf="displayDetail" [booking]="bookingData" [show]="showData" [movie]="movieData" [cinemaHall]="cinemaHallData" [cinema]="cinemaData" [city]="cityData"  [payment]="paymentData" ></app-details>
+</div>

@@ -1,0 +1,17 @@
+<div class="movieDetail">
+    <img class="selectedMovie movie" src="{{selectedMovie.source}}" alt="">
+    <div class="">
+        <h1>{{selectedMovie.name}}</h1>
+        <h3>{{selectedMovie.genre}}</h3>
+        <h3>{{selectedMovie.language}}</h3>
+        <h3>Released On: {{selectedMovie.releasedDate | date:'dd-MM-yyy'}}</h3>
+        <h3>Duration:   {{selectedMovie.duration}}</h3>
+        <div>
+            <button class="btn btn-danger text-white" routerLink="/booking/{{selectedMovie.id}}/{{selectedShow.id}}">Book Ticket</button>
+        </div>
+    </div>
+</div>
+<div class="about">
+    <h1>About the movie:</h1>
+    <h6>{{selectedMovie.description}}</h6>
+</div>

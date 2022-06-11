@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.header{
+    width: 100%;
+    height: 64px;
+    background: rgb(51, 53, 69);
+    padding: 0px;
+}
+.logo{
+    margin-top: 10px;
+    margin-left: 135px;
+    height: 40px;
+}
+.search{
+    position:absolute;
+    align-items: center;
+    padding: 0px;
+    margin-left: 280px;
+    cursor: text;
+    width: calc(100% - 134px);
+    max-width: 549px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 4px;
+    height: 35px;
+    margin-top: -35px;
+}
+.cityIcon{
+    float: right;
+    margin-right: 260px;
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: lightGrey;
+    padding-right: 15px;
+    padding-top: 5px;
+    line-height: 24px;
+    display: inline;
+    cursor: pointer;
+}
+.header svg{
+    fill:white;
+    margin-top: 5px;
+}
+.signIn{
+    float: right;
+    margin-top: 22px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 68, 100);
+    font-size: 12px;
+    margin-right: -130px;
+    height: 25px;
+    line-height: 25px;
+    width: 67px;
+    display: inline;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid rgb(248, 68, 100);
+}
+.menu{
+    float: right;
+    margin-right: -170px;
+    margin-top: 22px;
+}
+.navigate{
+    
+    font-family: Roboto,sans-serif;
+    width: 100%;
+    padding: 0px 10px;
+    background: rgb(31, 37, 51);
+    padding-left: 130px;
+    margin-right: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 16px;
+    font-weight: lighter;
+    list-style: none;
+    font-size:14px;
+}
+.navItem{
+    opacity: 1;
+    padding: 10px 8px;
+    text-decoration: none;
+}
+.navItem a,.navItems a{
+    color: rgb(204, 204, 204);
+    text-decoration: none;
+}
+.navItems{
+    opacity: 1;
+    padding: 10px 8px;
+    color: white;
+    text-decoration: none;
+    margin-left: 580px;
+}
+.new{
+    font-size: 8px;
+    color: rgb(231, 54, 77);
+    font-weight: 500;
+    position: absolute;
+    margin-left: 30px;
+    bottom: 89.5%;
+}
+.lnew{
+    font-size: 8px;
+    color: rgb(231, 54, 77);
+    font-weight: 500;
+    position: absolute;
+    margin-left: 80px;
+    bottom: 89.5%;
+}
+svg{
+    width: 30px;
+    height: 15px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.searchBar{
+    max-width: 70%;
+    width: 85%;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 33px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    vertical-align: initial;
+    cursor: text;
+    font-family: Roboto,sans-serif;
+    user-select: none;
+}
+.movies,.cities{
+    word-break: break-word;
+    color: rgb(51, 51, 51);
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+    background: #0000;
+    border: 0;
+    margin-left: 100px;
+    vertical-align: initial;
+    font-family: sans-serif;
+}
+.all{
+    margin: 0px;
+    word-break: break-word;
+    color: rgb(220, 53, 88);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.43;
+    float: right;
+}
+.movie,.profile{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.movie p{
+    font-size:medium;
+}
+.selectedMovie{
+    width:273px;
+    height:394px;
+}
+.movieDetail{
+    display: flex;
+}
+.movieDetail h1{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.movieDetail h3{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.btn{
+    margin-top: 20px;
+    margin-left: 50px;
+    letter-spacing: 0.2px;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.about{
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.city{
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    position: absolute;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin:0px 150px;
+}
+.cities{
+    margin: 20px;
+}
+.booking,.sign{
+    font-size: medium;
+    margin: 50px 0px 50px 200px;
+}
+label{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.bookingList,.city{
+    z-index: 1;
+}
+.bookingList,.sign,.logIn{
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    position: absolute;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin:0px 0px 0px 1100px;
+    width: 25vw;
+    height: 80vh;
+    border: black solid thick;
+}
+.bookingList li, .details li{
+    list-style: none;
+    margin-left: 10px;
+}
+.sign,.logIn{
+    padding: 20px 5px;
+    height: 50vh;
+}
+.sign button, .logIn button{
+    margin-left: 150px;
+    margin-bottom: 5px;
+    width: 80px;
+}
+.logout{
+    width: 200px;
+    float: right;
+    margin-right: 100px;
+}
